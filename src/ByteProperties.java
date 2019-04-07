@@ -1,12 +1,14 @@
 public class ByteProperties {
 
     public static void print(){
+        System.out.println("byte properties...");
         printMaxValue();
         printMinValue();
         printMaxValuePlusoOne();
         printMinValueMinusOne();
         authomaticResize();
         u2System();
+        System.out.println();
     }
 
     private static void u2System(){

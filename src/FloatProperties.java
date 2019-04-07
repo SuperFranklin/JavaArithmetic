@@ -1,8 +1,11 @@
 public class FloatProperties {
 
     public static void print(){
+        System.out.println("float properties...");
         printAddTwoFloats();
         printMultiplication();
+        printEpsilon();
+        System.out.println();
     }
 
     private static void printAddTwoFloats(){
@@ -21,6 +24,16 @@ public class FloatProperties {
 
     private static void printMaxValue(){
 
+    }
+
+    private static void printEpsilon(){
+        float x=1.0f;
+        float epsilon=1.0f;
+
+        while(x+(float)(epsilon*0.5)!=x) {
+            epsilon*=0.5;
+        }
+        System.out.println("float epsilon: " + epsilon);
     }
 
 }

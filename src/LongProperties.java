@@ -1,11 +1,13 @@
 public class LongProperties {
 
     public static void print(){
+        System.out.println("long properties...");
         prlonglongMaxValue();
         prlonglongMinValue();
         prlonglongMaxValuePlusoOne();
         prlonglongMinValueMinusOne();
         prlonglongBitSet();
+        System.out.println();
     }
 
     private static void prlonglongMaxValue() {
