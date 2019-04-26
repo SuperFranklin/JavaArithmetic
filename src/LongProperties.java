@@ -11,10 +11,12 @@ public class LongProperties {
     }
 
     private static void prlonglongMaxValue() {
-        long i = Long.MAX_VALUE-100000;
-        while (i+1>0){
-            i++;
+        long i = 2;
+        while((i*2)>(long)1){
+            i=i*2;
         }
+        i = (i*2)-1;
+
         System.out.println("long max value: " + i);
     }
 

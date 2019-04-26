@@ -9,7 +9,7 @@ public class IntProperties {
         printIntBitSet();
         printValueForZeroBits();
         printValueFromAll31Bits();
-        printMinimalValueFromBitset();
+        //printMinimalValueFromBitset();
         System.out.println();
     }
 
