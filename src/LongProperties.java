@@ -15,8 +15,15 @@ public class LongProperties {
         while((i*2)>(long)1){
             i=i*2;
         }
-        i = (i*2)-1;
-
+        while(i+100000000000l>(long)1){
+            i=i+100000000000l;
+        }
+        while(i+100000000l>(long)1){
+            i=i+100000000l;
+        }
+        while(i+1>(long) 1){
+            i++;
+        }
         System.out.println("long max value: " + i);
     }
 
@@ -40,7 +47,7 @@ public class LongProperties {
         long value = Long.MAX_VALUE;
         String binaryString = Long.toBinaryString(value);
         System.out.println("long max value bit set: " + binaryString);
-        //first bit is a sign bit
+
         System.out.println("long max value bit count: " + binaryString.length());
 
         value = Long.MIN_VALUE;

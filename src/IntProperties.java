@@ -9,8 +9,6 @@ public class IntProperties {
         printIntBitSet();
         printValueForZeroBits();
         printValueFromAll31Bits();
-        //printMinimalValueFromBitset();
-        System.out.println();
     }
 
     private static void printIntMaxValue() {
@@ -60,11 +58,5 @@ public class IntProperties {
         String bitset = "1111111111111111111111111111111";
         int value = Integer.valueOf(bitset, 2);
         System.out.println("1111....1111 (31 bits) to int: " + value);
-    }
-
-    private static void printMinimalValueFromBitset(){
-        String bitset = "10000000000000000000000000000000";
-        int value = Integer.parseInt(bitset, 2);
-        System.out.println("1000...0000 (32 bits) to int: " + value);
     }
 }
